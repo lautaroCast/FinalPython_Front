@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <form class="buscar-form">
+                <label for="search">
+                    <input class="input" type="text" required="" placeholder="Buscar un producto..." id="search">
+                    <div class="fancy-bg"></div>
+                    <div class="search">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
+                            <g>
+                                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <button class="close-btn" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </label>
+            </form>
+            <div class="acciones-derecha">
+                <div class="perfil-container">
+                    <a href="perfil.html">Perfil</a>
+                </div>
+                <div class="carrito-container">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>Carrito</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="fondo-container">
+        <div class="fondo-titulo">
+            <h1>Nova-Shop</h1>
+        </div>
+    </div>
+    <!-- CARRUSEL -->
+    <section class="carrusel-ofertas">
+        <div class="slider-container" id="main-carousel">
+        
+            <article class="slide product-slide" data-index="1">
+                <div class="slide-content">
+                    <h2>Smartwatch Ultra: ¡50% de Descuento!</h2>
+                    <p>Tecnología de vanguardia para tu día a día. Edición limitada.</p>
+                    <a href="/producto/smartwatch-ultra" class="btn-oferta">Comprar Ahora</a>
+                </div>
+            </article>
+        
+            <article class="slide category-slide" data-index="2">
+                <div class="slide-content">
+                    <h2>Nueva Colección de Zapatillas</h2>
+                    <p>Descubre los modelos más cómodos y resistentes.</p>                        <a href="/categoria/calzado" class="btn-oferta">Ver Calzado</a>
+                </div>
+            </article>
+                
+                <article class="slide general-promo" data-index="3">
+                <div class="slide-content">
+                    <h2>📦 Envío Gratis en pedidos de más de $50</h2>
+                    <p>Aprovecha y llena tu carrito sin preocuparte por el costo de envío.</p>
+                    <a href="/productos" class="btn-oferta">Explorar Productos</a>
+                </div>
+            </article>
+
+            <article class="slide product-slide" data-index="4">
+                <div class="slide-content">
+                    <h2>🎧 Audífonos Inalámbricos Pro</h2>
+                    <p>Calidad de sonido premium por solo $89.99.</p>
+                    <a href="/producto/audifonos-pro" class="btn-oferta">Lo Quiero</a>
+                </div>
+            </article>    
+                
+        </div>
+
+        <button class="prev-btn" aria-label="Diapositiva anterior">❮</button>
+        <button class="next-btn" aria-label="Diapositiva siguiente">❯</button>
+
+        <div class="carousel-indicators">
+            <span class="dot active" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+        </div>
+    </section>
+   
+
+    <!-- FIN CARRUSEL -->
+     <script src="../javaScript/carrusel.js"></script>
+     <script src="../javaScript/carrito.js"></script>
+</body>
+</html>

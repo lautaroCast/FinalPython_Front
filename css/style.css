@@ -1,0 +1,617 @@
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilos generales para el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    margin: 0 auto 0 auto;
+    text-align: center; 
+    font-size: 4rem;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    top: 1rem;
+  }
+
+.fondo-titulo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  backdrop-filter: blur(1em) brightness(6);
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #0000 0,
+    #0000 2px,
+    hsl(0 0 4%) 2px
+  );
+  background-size: 8px 8px;
+}
+
+.fondo-container {
+  position: relative;
+  width: 100%;
+  height: 7rem;
+  overflow: hidden;
+}
+
+.fondo-titulo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  --c: #09f;
+  background-color: #000;
+  background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 235px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 117.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 252px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 252px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 126px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 150px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 150px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 75px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 253px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 253px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 126.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 204px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 204px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 102px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 134px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 134px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 67px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 179px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 179px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 89.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 299px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 299px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 149.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 215px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 215px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 107.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 281px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 281px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 140.5px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 158px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 158px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 79px, var(--c) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 210px, var(--c), #0000),
+    radial-gradient(4px 100px at 300px 210px, var(--c), #0000),
+    radial-gradient(1.5px 1.5px at 150px 105px, var(--c) 100%, #0000 150%);
+  background-size:
+    300px 235px,
+    300px 235px,
+    300px 235px,
+    300px 252px,
+    300px 252px,
+    300px 252px,
+    300px 150px,
+    300px 150px,
+    300px 150px,
+    300px 253px,
+    300px 253px,
+    300px 253px,
+    300px 204px,
+    300px 204px,
+    300px 204px,
+    300px 134px,
+    300px 134px,
+    300px 134px,
+    300px 179px,
+    300px 179px,
+    300px 179px,
+    300px 299px,
+    300px 299px,
+    300px 299px,
+    300px 215px,
+    300px 215px,
+    300px 215px,
+    300px 281px,
+    300px 281px,
+    300px 281px,
+    300px 158px,
+    300px 158px,
+    300px 158px,
+    300px 210px,
+    300px 210px,
+    300px 210px;
+  animation: hi 150s linear infinite;
+}
+
+@keyframes hi {
+  0% {
+    background-position:
+      0px 220px,
+      3px 220px,
+      151.5px 337.5px,
+      25px 24px,
+      28px 24px,
+      176.5px 150px,
+      50px 16px,
+      53px 16px,
+      201.5px 91px,
+      75px 224px,
+      78px 224px,
+      226.5px 350.5px,
+      100px 19px,
+      103px 19px,
+      251.5px 121px,
+      125px 120px,
+      128px 120px,
+      276.5px 187px,
+      150px 31px,
+      153px 31px,
+      301.5px 120.5px,
+      175px 235px,
+      178px 235px,
+      326.5px 384.5px,
+      200px 121px,
+      203px 121px,
+      351.5px 228.5px,
+      225px 224px,
+      228px 224px,
+      376.5px 364.5px,
+      250px 26px,
+      253px 26px,
+      401.5px 105px,
+      275px 75px,
+      278px 75px,
+      426.5px 180px;
+  }
+
+  to {
+    background-position:
+      0px 6800px,
+      3px 6800px,
+      151.5px 6917.5px,
+      25px 13632px,
+      28px 13632px,
+      176.5px 13758px,
+      50px 5416px,
+      53px 5416px,
+      201.5px 5491px,
+      75px 17175px,
+      78px 17175px,
+      226.5px 17301.5px,
+      100px 5119px,
+      103px 5119px,
+      251.5px 5221px,
+      125px 8428px,
+      128px 8428px,
+      276.5px 8495px,
+      150px 9876px,
+      153px 9876px,
+      301.5px 9965.5px,
+      175px 13391px,
+      178px 13391px,
+      326.5px 13540.5px,
+      200px 14741px,
+      203px 14741px,
+      351.5px 14848.5px,
+      225px 18770px,
+      228px 18770px,
+      376.5px 18910.5px,
+      250px 5082px,
+      253px 5082px,
+      401.5px 5161px,
+      275px 6375px,
+      278px 6375px,
+      426.5px 6480px;
+  }
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px; 
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilos para la lista de navegación (UL) */
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    /* Alinea los enlaces horizontalmente */
+    display: flex;
+    gap: 15px; 
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #fff;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f7b731; /* Efecto al pasar el ratón */
+}
+
+
+
+/* Contenedores de Perfil y Carrito (Elementos de Acción a la derecha) */
+.acciones-derecha {
+    /* Agrupa Perfil y Carrito para controlarlos como un bloque */
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre Perfil y Carrito */
+    padding-left: 8.5rem;
+}
+
+.perfil-container a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.perfil-container a:hover {
+    color: #f7b731;
+}
+
+/* Botón de Carrito */
+.carrito-container button {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    
+    background-color: #f7b731; 
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.carrito-container button:hover {
+    background-color: #e6a72e; 
+}
+
+.carrito-container svg {
+    fill: #333;
+    width: 18px;
+    height: 18px;
+}
+
+/* BARRA DE BÚSQUEDA */ 
+.buscar-form {
+  --input-text-color: #fff;
+  --input-bg-color: #283542;
+  --focus-input-bg-color: transparent;
+  --text-color: #949faa;
+  --active-color: #1b9bee;
+  --width-of-input: 450px;
+  --inline-padding-of-input: 1.2em;
+  --gap: 0.9rem;
+}
+/* form style */
+.buscar-form {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: var(--width-of-input);
+  position: relative;
+  isolation: isolate;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* a fancy bg for showing background and border when focus. */
+.fancy-bg {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background: var(--input-bg-color);
+  border-radius: 30px;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* label styling */
+label {
+  width: 100%;
+  padding: 0.3em;
+  height: 30px;
+  padding-inline: var(--inline-padding-of-input);
+  display: flex;
+  align-items: center;
+}
+
+.search,.close-btn {
+  position: absolute;
+}
+/* styling search-icon */
+.search {
+  fill: var(--text-color);
+  left: var(--inline-padding-of-input);
+}
+/* svg -- size */
+svg {
+  width: 17px;
+  display: block;
+}
+/* styling of close button */
+.close-btn {
+  border: none;
+  right: var(--inline-padding-of-input);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--active-color);
+  opacity: 0;
+  visibility: hidden;
+}
+/* styling of input */
+.input {
+  color: var(--input-text-color);
+  width: 100%;
+  margin-inline: min(2em,calc(var(--inline-padding-of-input) + var(--gap)));
+  background: none;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-color)
+}
+/* input background change in focus */
+.input:focus ~ .fancy-bg {
+  border: 1px solid var(--active-color);
+  background: var(--focus-input-bg-color);
+}
+/* search icon color change in focus */
+.input:focus ~ .search {
+  fill: var(--active-color);
+}
+/* showing close button when typing */
+.input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+nav .perfil-carrito{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+}
+
+/* FIN BUSCADOR */
+
+/* Contenedor principal del carrusel */
+.carrusel-ofertas {
+    position: relative;
+    max-width: 100%; /* Ajusta este ancho según tu diseño */
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de todas las diapositivas (Slider Track) */
+.slider-container {
+    display: flex;
+    width:100%; /* 4 diapositivas * 100% de ancho */
+    transition: transform 0.5s ease-in-out; 
+}
+
+/* Estilo de cada diapositiva */
+.slide {
+    width: 100%; 
+    flex-shrink: 0;
+    height: 350px; /* Altura fija para todas las diapositivas */
+    /* --- CAMBIOS CLAVE AQUÍ: CENTRAR EL CONTENIDO --- */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    /* ------------------------------------------------ */
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 15px;
+}
+
+/* Nuevo contenedor para asegurar que el contenido interno tenga un ancho manejable */
+.slide-content {
+    max-width: 100%; /* Limita el ancho del texto para que no se extienda demasiado */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mejor legibilidad */
+    border-radius: 5px;
+}
+
+.slide-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.btn-oferta {
+    display: inline-block;
+    background-color: white;
+    color: #3f51b5;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-oferta:hover {
+    background-color: #eee;
+}
+
+/* Colores de fondo de las diapositivas (Manteniendo la base) */
+.carrusel-ofertas .slide:nth-child(1) { background-color: #3f51b5; } /* Azul */
+.carrusel-ofertas .slide:nth-child(2) { background-color: #ff9800; } /* Naranja */
+.carrusel-ofertas .slide:nth-child(3) { background-color: #4caf50; } /* Verde */
+.carrusel-ofertas .slide:nth-child(4) { background-color: #e91e63; } /* Rosa */
+
+/* Controles (Botones < y >) - Aseguramos que tengan un z-index alto */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que estén por encima del contenido */
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.prev-btn { left: 0; border-radius: 0 5px 5px 0; }
+.next-btn { right: 0; border-radius: 5px 0 0 5px; }
+
+/* Indicadores de Puntos */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* CARRITO */
+/* --- Estilos del Contenedor Principal --- */
+.cart-container {
+    position: relative; /* Es clave para que el desplegable se posicione con respecto a este contenedor */
+    display: inline-block;
+}
+
+/* --- Estilos del Ícono/Botón --- */
+.cart-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+    position: relative;
+    /* Estilos para el número de ítems */
+}
+
+.cart-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* --- Estilos del Desplegable (Mini-Carrito) --- */
+.cart-dropdown {
+    /* Posicionamiento y Ocultamiento Inicial */
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 100%; /* Justo debajo del icono */
+    right: 0; /* Alineado a la derecha del ícono */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+
+    /* Apariencia */
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Estado Activo: Se muestra al agregar la clase 'active' con JS */
+.cart-dropdown.active {
+    display: block;
+}
+
+/* --- Estilos de Contenido del Desplegable --- */
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    max-height: 200px; /* Limita la altura y permite scroll si hay muchos items */
+    overflow-y: auto;
+}
+
+#cart-items li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-summary {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
