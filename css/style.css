@@ -264,7 +264,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f7b731; /* Efecto al pasar el ratón */
+    color: #28c71a; /* Efecto al pasar el ratón */
 }
 
 
@@ -670,4 +670,25 @@ nav .perfil-carrito{
     margin-bottom: 20px; /* Espacio debajo del h2 */
     padding-bottom: 5px; /* Pequeño padding para separar el texto del borde */
 
+}
+
+footer {
+    background-color: #161616;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.footer-links {
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.footer-links li a {
+    color: #b8b8b8;
+    text-decoration: none;
+    transition: color 0.3s;
 }
